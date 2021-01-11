@@ -6,7 +6,7 @@ A simple and beautiful component library...
 
 ### ABOUT THIS LIBRARY
 
-This library is a component library for ReactJS projects. This project was built with, TypeScript ReactJS, Styled Components, Storybook, Jest, React Testing Library and more. Made by [Diego Ramos](https://www.linkedin.com/in/coderamos/)
+This library is a component library for ReactJS projects. This project was built with, TypeScript ReactJS, Styled Components, Storybook, Jest, React Testing Library and more. Made by [coderamos](https://www.linkedin.com/in/coderamos/)
 
 ---
 
