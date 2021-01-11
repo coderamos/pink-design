@@ -1,0 +1,9 @@
+node_modules
+src
+tsconfig.json
+coverage
+debug.log
+
+.github
+__tests__
+yarn-error.log
