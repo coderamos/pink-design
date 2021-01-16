@@ -22,7 +22,7 @@ const GlobalStyles: GlobalStyleComponent<
   padding: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: ${props => props.theme.font.family};
+  font-family: var(--font-family);
   outline: none;
 
   &::before,
@@ -31,32 +31,19 @@ const GlobalStyles: GlobalStyleComponent<
   }
 }
 
-  ${({ theme, removeBackgroundColor }) => css`
+  ${({ removeBackgroundColor }) => css`
     html {
       font-size: 62.5%;
     }
 
     body {
-      font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.medium};
+      font-family: var(--font-family);
+      font-size: var(--font-medium);
 
       ${!removeBackgroundColor &&
       css`
-        background-color: ${theme.colors.secondary};
+        background-color: var(--color-secondary);
       `}
-
-      ::-webkit-scrollbar {
-        background-color: transparent;
-        width: 0.8rem;
-      }
-      ::-webkit-scrollbar-track {
-        background-color: transparent;
-        border-radius: ${theme.border.radius};
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: ${theme.colors.primary};
-        border-radius: ${theme.border.radius};
-      }
     }
 
     :root {
@@ -71,7 +58,7 @@ const GlobalStyles: GlobalStyleComponent<
       --color-storybook: #ff4785;
       --color-white: #ffffff;
 
-      --font-family: "Space Mono, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+      --font-family: 'Space Mono', monospace;
       --font-light: 300;
       --font-normal: 400;
       --font-bold: 600;
